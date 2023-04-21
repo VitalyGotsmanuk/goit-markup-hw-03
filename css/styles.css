@@ -1,0 +1,202 @@
+/* Коментар Ctrl+/ */
+
+:root{
+	--color-iris: #4d5ae5;
+	--color-ocean: #404bbf;
+	--color-navy-blue: #2e2f42;
+	--color-green: #31d0aa;
+	--color-slate: #434455;
+	--color-light-slate: #8e8f99;
+	--color-cornflower: #e7e9fc;
+	--color-cloud: #f4f4fd;
+	--color-navy-blue-modal: #2e2f42;
+	--color-grey: #2e2f42;
+
+/* Header background, team card background */
+	--color-white: #ffffff;
+	--color-dairy: #fcfcfc;
+
+}
+
+/*Base style*/
+body{
+    color: var(--color-slate);
+	background-color: var(--color-white);
+
+	 /*fonts*/
+	font-family: 'Roboto', sans-serif;
+	--primary-font: 'Roboto';
+
+}
+
+.link{
+    text-decoration: none; /*прибрали підкреслення у всіх посилань*/
+    color: currentColor;
+	line-height: 1.5;
+	letter-spacing: 0.02m;
+}
+.list{
+ 	list-style: none; /*прибрали булети*/
+	font-style: normal;
+
+}
+.header{
+    background-color: var(--color-white);
+}
+.footer{
+    background-color: var(--color-navy-blue);
+	color: var(--color-cloud);
+
+}
+.hero{
+    background-color: var(--color-navy-blue);
+}
+.btn{
+	background-color: var(--color-iris);
+	color: var(--color-white);
+
+	border-style: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+
+	/*font-family: inherit;*/
+	font-family: 'Roboto', sans-serif;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+    text-align: center;
+	display: flex;
+	cursor: pointer;
+
+}
+.btn:hover,
+.btn:focus{
+	background-color: var(--color-ocean);
+}
+
+.flrt{
+	background-color: var(--color-cloud);
+	color: var(--color-iris);
+
+	border: 1px solid #E7E9FC;
+	border-radius: 4px;
+
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+}
+.flrt:hover,
+.flrt:focus{
+	background-color: var(--color-ocean);
+	color: var(--color-white);
+}
+/* [type] {} */
+
+.hero-header{
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+    color: var(--color-white);
+    text-align: center;
+}
+.header-section{
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+    text-align: center;
+    color: var(--color-navy-blue);
+
+}
+.header-small{
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--color-navy-blue);
+    
+}
+.text-body,
+.text-body-footer, 
+.text-body-adr{
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.text-body-medium{
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	font-style: normal;
+	color: var(--color-navy-blue); 
+}
+.text-body-medium:hover,
+.text-body-medium:focus,
+.text-body-adr:hover,
+.text-body-adr:focus{
+	color: var(--color-ocean);
+}
+.text-small{
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+}
+.text-link{
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+	text-decoration: underline;
+}
+
+.logo{
+    /* Studio */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+ 
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+	color: var(--color-iris);
+  
+
+}
+.logo-w{
+	/*color: var(--color-iris);*/
+	color: var(--color-navy-blue-modal);
+}
+.logo-f{
+	/*color: var(--color-iris);*/
+	color: var(--color-cloud);
+}
+.header-adr,
+.header-adr-item{
+    text-decoration: none; /*прибрали підкреслення у всіх посилань*/
+    color: currentColor;
+    font-style: normal;
+}
+.team{
+	background-color: #f4f4fd;
+}
+.team-list{
+	background-color: var(--color-white);
+	text-align: center;
+
+}
+.footer-txt{
+    color: var(--color-cloud);
+}
