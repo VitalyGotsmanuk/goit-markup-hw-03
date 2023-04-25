@@ -16,6 +16,9 @@
 	--color-white: #ffffff;
 	--color-dairy: #fcfcfc;
 
+ /* Others */
+	--indent: 24px;
+	--items: 3;
 }
 
 /*Base style*/
@@ -28,6 +31,18 @@ body{
 	--primary-font: 'Roboto';
 
 }
+/*По тегам для тексту скидаємо margin */
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+button {
+	cursor: pointer; /* Всі кнопки мають властивість  pointer*/ 
+}
+section{
+	padding-top: 120px;
+	padding-bottom: 120px;
+	/* 	padding: 120px 0;*/
+}
 
 .link{
     text-decoration: none; /*прибрали підкреслення у всіх посилань*/
@@ -36,29 +51,71 @@ body{
 	letter-spacing: 0.02m;
 }
 .list{
+	padding: 0; /*прибрали стандартні поля*/
+	margin: 0;
  	list-style: none; /*прибрали булети*/
 	font-style: normal;
-
+}
+.container{ /*ставимо на кожну секцию через div*/
+	width: 1158px; /*1128 px*/
+	padding: 0 15px;
+	margin: 0 auto; /*для центрування контенту*/
+	/*margin-right: auto;*/
 }
 .header{
     background-color: var(--color-white);
+	padding-top: 0px;
+	padding-bottom: 0px;
+	
 }
+.header-container {
+	display: flex;
+	align-items: center;
+	min-height: 72px;
+}
+.header-nav-list{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+
+}
+.header-adr-list{
+	display: flex;
+	align-items: center;
+}
+.header-nav{
+	margin-right: auto;
+}
+.header-cont {
+	margin-right: 40px;
+}
+
 .footer{
     background-color: var(--color-navy-blue);
 	color: var(--color-cloud);
+	padding-top: 120px;
+	padding-bottom: 100px;
 
 }
 .hero{
     background-color: var(--color-navy-blue);
+	
 }
 .btn{
-	background-color: var(--color-iris);
-	color: var(--color-white);
+	display: block;
+	margin: 0px auto;
 
+	min-width: 169px;
+	min-height: 56px;
+	padding: 15px 31px;
 	border-style: none;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 
+	background-color: var(--color-iris);
+	color: var(--color-white);
+
+	
 	/*font-family: inherit;*/
 	font-family: 'Roboto', sans-serif;
 
@@ -76,39 +133,27 @@ body{
 	background-color: var(--color-ocean);
 }
 
-.flrt{
-	background-color: var(--color-cloud);
-	color: var(--color-iris);
-
-	border: 1px solid #E7E9FC;
-	border-radius: 4px;
-
-	font-family: inherit;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.04em;
-	cursor: pointer;
-}
-.flrt:hover,
-.flrt:focus{
-	background-color: var(--color-ocean);
-	color: var(--color-white);
-}
 /* [type] {} */
 
 .hero-header{
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 48px;
+
 	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
     color: var(--color-white);
     text-align: center;
+
+	width: 496px;
+	padding-top: 68px;
+	
+
+
 }
-.header-section{
+.header-section{	
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.11;
@@ -116,6 +161,7 @@ body{
 	text-transform: capitalize;
     text-align: center;
     color: var(--color-navy-blue);
+	padding-bottom: 72px;
 
 }
 .header-small{
@@ -125,6 +171,7 @@ body{
 	letter-spacing: 0.02em;
     text-align: left;
     color: var(--color-navy-blue);
+	padding-bottom: 8px;
     
 }
 .text-body,
@@ -133,6 +180,7 @@ body{
 	font-style: normal;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+
 }
 .text-body-medium{
 	font-weight: 500;
@@ -172,6 +220,8 @@ body{
     text-transform: uppercase;
 
 	color: var(--color-iris);
+	margin-right: 76px;
+	
   
 
 }
@@ -183,20 +233,113 @@ body{
 	/*color: var(--color-iris);*/
 	color: var(--color-cloud);
 }
+.logo-ft{
+	margin-bottom: 8px;
+}
+
+
 .header-adr,
 .header-adr-item{
     text-decoration: none; /*прибрали підкреслення у всіх посилань*/
     color: currentColor;
     font-style: normal;
+	
 }
+.feature-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.feature-item{
+	width: 264px;
+}
+.wedo{
+	padding-top: 0;
+}
+.wedo-list{
+	display: flex;
+	justify-content: space-between;
+}
+
 .team{
 	background-color: #f4f4fd;
 }
 .team-list{
 	background-color: var(--color-white);
 	text-align: center;
-
+	border-radius: 0px 0px 4px 4px;
+	text-align: center;
+}
+.team-list-head{
+	text-align: center;
+}
+.team-img, .team-txt, {
+	margin-bottom: 32px; 
+}
+.list-team{
+	display: flex;
+	justify-content: space-between;
 }
 .footer-txt{
     color: var(--color-cloud);
+	max-width: 264px;
 }
+
+.portfolio{
+	padding-top: 0;
+}
+/*Filter portfolio style*/
+.filter-list{
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin-top: 96px;
+	margin-bottom: 72px;
+}
+.flrt{
+	background-color: var(--color-cloud);
+	color: var(--color-iris);
+
+	border: 1px solid #E7E9FC;
+	border-radius: 4px;
+
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+
+	padding: 12px 24px;
+}
+.flrt:hover,
+.flrt:focus{
+	background-color: var(--color-ocean);
+	color: var(--color-white);
+}
+/*===========================*/
+.prtf-img, .prtf-txt {
+	margin-bottom: 32px; 
+}
+.prtf-txt, .prtf-hed{
+margin-left: 16px}
+
+/*Filter portfolio list - auto ajust*/
+.portfolio-list /*Ставит карточки по ширине с не более с отступом между ними*/
+	{
+	display: flex;
+	flex-wrap: wrap;
+  	gap: var(--indent);
+
+	}
+
+.portfolio-list-itm
+{
+	flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+.prtf-itm{
+
+	}
