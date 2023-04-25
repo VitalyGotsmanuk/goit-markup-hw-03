@@ -273,9 +273,10 @@ section{
 .team-list-head{
 	text-align: center;
 }
-.team-img, .team-txt, {
+.team-img, .team-txt {
 	margin-bottom: 32px; 
 }
+
 .list-team{
 	display: flex;
 	justify-content: space-between;
@@ -340,6 +341,3 @@ margin-left: 16px}
 {
 	flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
-.prtf-itm{
-
-	}
