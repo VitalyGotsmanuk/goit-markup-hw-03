@@ -47,7 +47,6 @@ img{
 	display: block;
 }
 
-
 .link{
     text-decoration: none; /*прибрали підкреслення у всіх посилань*/
     color: currentColor;
@@ -66,92 +65,8 @@ img{
 	margin: 0 auto; /*для центрування контенту*/
 	/*margin-right: auto;*/
 }
-.header{
-    background-color: var(--color-white);
-	padding-top: 0px;
-	padding-bottom: 0px;
-	border-bottom: 1px solid #e7e9fc
+/* ====== Text Style ====== */
 
-}
-.header-nav{
-	display: flex;
-	align-items: center;
-}
-.header-nav-item{
-	
-}
-.nav-link{
-	padding: 24px 0;
-
-}
-
-.header-container {
-	display: flex;
-	align-items: center;
-	min-height: 72px;
-}
-.header-nav{
-	margin-right: auto;
-}
-.header-nav-list{
-	display: flex;
-	align-items: center;
-	gap: 40px;
-}
-
-
-.header-adr-list{
-	display: flex;
-	align-items: right;
-}
-.header-adr-item{
-	margin-right: 40px;
-}
-.header-adr-item:last-child{
-	margin-right: 0;
-}
-.header-cont {
-	margin-right: 40px;
-}
-.hero{
-    background-color: var(--color-navy-blue);
-	
-}
-.button{
-	display: block;
-	margin: 0px auto;
-
-	min-width: 169px;
-	min-height: 56px;
-	padding: 15px 31px;
-	border-style: none;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-
-	background-color: var(--color-iris);
-	color: var(--color-white);
-
-	
-	/*font-family: inherit;*/
-	font-family: 'Roboto', sans-serif;
-
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.04em;
-    text-align: center;
-	cursor: pointer;
-
-}
-.button:hover,
-.button:focus{
-	background-color: var(--color-ocean);
-}
-
-/* [type] {} */
-.hero{
-	padding: 188px 0;
-}
 .hero-header{
 	display: block;
 	margin: 0px auto;
@@ -167,8 +82,6 @@ img{
 	max-width: 496px;
 	/*padding-top: 68px;*/
 	
-
-
 }
 .header-section{	
 	font-size: 36px;
@@ -227,7 +140,94 @@ img{
 	letter-spacing: 0.04em;
 	text-decoration: underline;
 }
+/* ====== Text Style ====== */
 
+/* =====Шапка сайта =======*/
+.header{
+    background-color: var(--color-white);
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: 1px solid #e7e9fc
+
+}
+.header-nav{
+	display: flex;
+	align-items: center;
+}
+.header-nav-item{
+	
+}
+.nav-link{
+	padding: 24px 0;
+
+}
+.header-container {
+	display: flex;
+	align-items: center;
+	min-height: 72px;
+}
+.header-nav{
+	margin-right: auto;
+}
+.header-nav-list{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.header-adr-list{
+	display: flex;
+	align-items: right;
+}
+.header-adr-item{
+	margin-right: 40px;
+}
+.header-adr-item:last-child{
+	margin-right: 0;
+}
+.header-cont {
+	margin-right: 40px;
+}
+
+/* Section 1*/
+.hero{
+    background-color: var(--color-navy-blue);
+	padding: 188px 0;
+	
+}
+.button{
+	display: block;
+	margin: 0px auto;
+
+	min-width: 169px;
+	min-height: 56px;
+	padding: 15px 31px;
+	border-style: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+
+	background-color: var(--color-iris);
+	color: var(--color-white);
+
+	
+	/*font-family: inherit;*/
+	font-family: 'Roboto', sans-serif;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+    text-align: center;
+	cursor: pointer;
+
+}
+.button:hover,
+.button:focus{
+	background-color: var(--color-ocean);
+}
+
+/* [type] {} */
+
+/* ===== For Logo =====*/ 
 .logo{
     /* Studio */
     font-family: 'Raleway', sans-serif;
@@ -243,8 +243,6 @@ img{
 	color: var(--color-iris);
 	margin-right: 76px;
 	
-  
-
 }
 .logo-w{
 	/*color: var(--color-iris);*/
@@ -254,6 +252,7 @@ img{
 	/*color: var(--color-iris);*/
 	color: var(--color-cloud);
 }
+
 
 .header-adr,
 .header-adr-item{
@@ -284,10 +283,10 @@ img{
 	/*(від загальної ширини екрану віднімаємо суму відступів між пунктами і ділимо це на кількість пунктів списку) (можна використовувати width: calc((100% - 3 * 16px) / 3) або flex-basis: calc((100% - 48px) / 3) або flex-basis: calc((100% - 3 * 16px) / 3))*/
 }
 
-
+/* ==== For Team ====*/
 .team{
 	background-color: #f4f4fd;
-}
+}1
 .team-list{
 	background-color: var(--color-white);
 	text-align: center;
@@ -303,9 +302,6 @@ img{
 .team-txt{
 	text-align: center; 
 }
-/*.team-img, .team-txt {
-	margin-bottom: 32px; 
-}*/
 
 .list-team{
 	display: flex;
@@ -313,22 +309,25 @@ img{
 	gap: 24px;
 }
 
+/*=== Footer styles ======*/
 .footer{
     background-color: var(--color-navy-blue);
 	color: var(--color-cloud);
 	padding: 100px 0;
-
 }
 
 .logo-ft{
 	display: inline-block;
 	margin-bottom: 16px;
-
 }
+
 .footer-txt{
     color: var(--color-cloud);
 	max-width: 264px;
 }
+/*=========================*/
+
+/*=== For POrtfolio page ===*/
 
 .portfolio{
 	padding-top: 0;
@@ -338,7 +337,7 @@ img{
 	display: flex;
 	justify-content: center;
 	gap: 24px;
-	margin-top: 96px;
+	/*margin-top: 96px;*/
 	margin-bottom: 72px;
 }
 .flrt{
