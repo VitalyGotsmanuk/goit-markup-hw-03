@@ -37,11 +37,15 @@ h1,h2,h3,h4,h5,h6,p {
 }
 button {
 	cursor: pointer; /* Всі кнопки мають властивість  pointer*/ 
+	display: block;
 }
 section{
 	padding-top: 120px;
 	padding-bottom: 120px;
-	/* 	padding: 120px 0;*/
+		padding: 120px 0;
+}
+img{
+	display: block;
 }
 
 .link{
@@ -49,6 +53,7 @@ section{
     color: currentColor;
 	line-height: 1.5;
 	letter-spacing: 0.02m;
+	padding: 24 px 0;
 }
 .list{
 	padding: 0; /*прибрали стандартні поля*/
@@ -66,8 +71,18 @@ section{
     background-color: var(--color-white);
 	padding-top: 0px;
 	padding-bottom: 0px;
+	border-bottom: 1px solid #e7e9fc
+
 	
 }
+.header-nav{
+	display: flex;
+	align-items: center;
+
+}
+
+
+
 .header-container {
 	display: flex;
 	align-items: center;
@@ -134,7 +149,9 @@ section{
 }
 
 /* [type] {} */
-
+.hero{
+	padding: 188px 0;
+}
 .hero-header{
 	display: block;
 	margin: 0px auto;
@@ -147,8 +164,8 @@ section{
     color: var(--color-white);
     text-align: center;
 
-	width: 496px;
-	padding-top: 68px;
+	max-width: 496px;
+	/*padding-top: 68px;*/
 	
 
 
@@ -161,6 +178,7 @@ section{
 	text-transform: capitalize;
     text-align: center;
     color: var(--color-navy-blue);
+	
 	padding-bottom: 72px;
 
 }
@@ -171,6 +189,7 @@ section{
 	letter-spacing: 0.02em;
     text-align: left;
     color: var(--color-navy-blue);
+	
 	padding-bottom: 8px;
     
 }
@@ -247,6 +266,7 @@ section{
 }
 .feature-list {
 	display: flex;
+	gap: 24px;
 	justify-content: space-between;
 }
 
@@ -258,6 +278,7 @@ section{
 }
 .wedo-list{
 	display: flex;
+	gap: 24px;
 	justify-content: space-between;
 }
 
@@ -273,9 +294,15 @@ section{
 .team-list-head{
 	text-align: center;
 }
-.team-img, .team-txt {
-	margin-bottom: 32px; 
+.team-card{
+	padding: 32px 16px;
 }
+.team-txt{
+	text-align: center; 
+}
+/*.team-img, .team-txt {
+	margin-bottom: 32px; 
+}*/
 
 .list-team{
 	display: flex;
@@ -333,7 +360,8 @@ margin-left: 16px}
 	{
 	display: flex;
 	flex-wrap: wrap;
-  	gap: var(--indent);
+  	gap:var(--indent);
+	/*gap: 24px;*/
 
 	}
 
