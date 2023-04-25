@@ -99,32 +99,19 @@ img{
 	gap: 40px;
 }
 
+
 .header-adr-list{
 	display: flex;
 	align-items: right;
-	margin-right: 40px;
 }
 .header-adr-item{
 	margin-right: 40px;
 }
 .header-adr-item:last-child{
-	margin-right: 40px;
+	margin-right: 0;
 }
-
-
 .header-cont {
 	margin-right: 40px;
-
-
-}
-
-.footer{
-    background-color: var(--color-navy-blue);
-	color: var(--color-cloud);
-	
-	padding: 100px 0;
-
-
 }
 .hero{
     background-color: var(--color-navy-blue);
@@ -153,7 +140,6 @@ img{
 	line-height: 1.5;
 	letter-spacing: 0.04em;
     text-align: center;
-	display: flex;
 	cursor: pointer;
 
 }
@@ -268,12 +254,6 @@ img{
 	/*color: var(--color-iris);*/
 	color: var(--color-cloud);
 }
-.logo-ft{
-	display: inline-block;
-	margin-bottom: 16px;
-
-}
-
 
 .header-adr,
 .header-adr-item{
@@ -333,6 +313,18 @@ img{
 	gap: 24px;
 }
 
+.footer{
+    background-color: var(--color-navy-blue);
+	color: var(--color-cloud);
+	padding: 100px 0;
+
+}
+
+.logo-ft{
+	display: inline-block;
+	margin-bottom: 16px;
+
+}
 .footer-txt{
     color: var(--color-cloud);
 	max-width: 264px;
