@@ -37,7 +37,6 @@ h1,h2,h3,h4,h5,h6,p {
 }
 button {
 	cursor: pointer; /* Всі кнопки мають властивість  pointer*/ 
-	display: block;
 }
 section{
 	padding-top: 120px;
@@ -131,7 +130,7 @@ img{
     background-color: var(--color-navy-blue);
 	
 }
-.btn{
+.button{
 	display: block;
 	margin: 0px auto;
 
@@ -158,8 +157,8 @@ img{
 	cursor: pointer;
 
 }
-.btn:hover,
-.btn:focus{
+.button:hover,
+.button:focus{
 	background-color: var(--color-ocean);
 }
 
@@ -373,6 +372,8 @@ img{
 .flrt:focus{
 	background-color: var(--color-ocean);
 	color: var(--color-white);
+	border: 1px solid transparent;
+
 }
 /*===========================*/
 .prtf-img, .prtf-txt {
@@ -381,15 +382,24 @@ img{
 .prtf-txt, .prtf-hed{
 margin-left: 16px}
 
+.portfolio{
+	padding: 96px 0 120px;
+}
+
 /*Filter portfolio list - auto ajust*/
 .portfolio-list /*Ставит карточки по ширине с не более с отступом между ними*/
 	{
 	display: flex;
 	flex-wrap: wrap;
   	gap:var(--indent);
-	/*gap: 24px;*/
+	column-gap: 24px;
+	gap: 24px;
 
 	}
+.prtf-itm{
+	border: 1px solid #e7e9fc;
+	border-top: none;
+}	
 
 .portfolio-list-itm
 {
