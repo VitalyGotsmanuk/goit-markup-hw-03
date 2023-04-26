@@ -154,9 +154,7 @@ img{
 	display: flex;
 	align-items: center;
 }
-.header-nav-item{
-	
-}
+
 .nav-link{
 	padding: 24px 0;
 
@@ -278,10 +276,11 @@ img{
 	gap: 24px;
 	justify-content: space-between;
 }
+/*
 .wedo-itm {
-	/*width: calc((100% - 48px) / 3);*/
+	width: calc((100% - 48px) / 3);
 	/*(від загальної ширини екрану віднімаємо суму відступів між пунктами і ділимо це на кількість пунктів списку) (можна використовувати width: calc((100% - 3 * 16px) / 3) або flex-basis: calc((100% - 48px) / 3) або flex-basis: calc((100% - 3 * 16px) / 3))*/
-}
+
 
 /* ==== For Team ====*/
 .team{
@@ -384,15 +383,20 @@ img{
 	padding: 0;
 
 	}
-.prtf-itm{
+/*.prtf-itm{
 	width: calc((100% - 48px) / 3);
 	border: 1px solid #e7e9fc;
 	border-top: none;
-}	
+}	*/
 .portfolio-card{
-	padding-top: 32px ;
+	border: 1px solid #e7e9fc;
+	border-top: none;
+
+	/*padding-top: 32px ;
 	padding-bottom: 32px;
-	padding-left: 16px;
+	padding-left: 16px;*/
+
+	padding: 32px 16px;
 
 	
 }
