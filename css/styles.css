@@ -1,5 +1,56 @@
 /* Коментар Ctrl+/ */
 
+/*==== Базове скидання стіилів ====== */
+/* == Drop headers margin == */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p  {
+	margin: 0;
+}
+/* == Pict style == */
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+button {
+	cursor: pointer; /* Всі кнопки мають властивість  pointer*/ 
+	border: none;
+	border-radius: 4px;
+}
+/* == Drop list style ==*/
+ul, ol {
+	list-style: none;  /*прибрали булети*/
+	font-style: normal;
+	margin: 0; /*прибрали стандартні поля*/
+	padding-left: 0; /*прибрали стандартні поля*/
+}
+a {
+	text-decoration: none; /*прибрали підкреслення у всіх посилань*/
+	/* color: inherit;*/
+}
+/* ======================== */
+
+/* = Visually hidden CSS pattern = */
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+  }
+
+
 :root{
 	--color-iris: #4d5ae5;
 	--color-ocean: #404bbf;
@@ -29,35 +80,19 @@ body{
 	 /*fonts*/
 	font-family: 'Roboto', sans-serif;
 	--primary-font: 'Roboto';
-
-}
-/*По тегам для тексту скидаємо margin */
-h1,h2,h3,h4,h5,h6,p {
-	margin: 0;
-}
-button {
-	cursor: pointer; /* Всі кнопки мають властивість  pointer*/ 
 }
 section{
 	padding-top: 120px;
 	padding-bottom: 120px;
-		padding: 120px 0;
+	padding: 120px 0;
 }
-img{
-	display: block;
-}
-
 .link{
-    text-decoration: none; /*прибрали підкреслення у всіх посилань*/
     color: currentColor;
 	line-height: 1.5;
 	letter-spacing: 0.02m;
 }
 .list{
-	padding: 0; /*прибрали стандартні поля*/
-	margin: 0;
- 	list-style: none; /*прибрали булети*/
-	font-style: normal;
+	/**/
 }
 .container{ /*ставимо на кожну секцию через div*/
 	width: 1158px; /*1128 px*/
@@ -114,7 +149,6 @@ img{
 	font-style: normal;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-
 }
 .text-body-medium{
 	font-weight: 500;
@@ -140,32 +174,27 @@ img{
 	letter-spacing: 0.04em;
 	text-decoration: underline;
 }
-/* ====== Text Style ====== */
+/* ====== ========= ====== */
 
-/* =====Шапка сайта =======*/
+/* ===== Header style  =======*/
 .header{
     background-color: var(--color-white);
 	padding-top: 0px;
 	padding-bottom: 0px;
 	border-bottom: 1px solid #e7e9fc
-
 }
 .header-nav{
 	display: flex;
 	align-items: center;
+	margin-right: auto;
 }
-
 .nav-link{
 	padding: 24px 0;
-
 }
 .header-container {
 	display: flex;
 	align-items: center;
 	min-height: 72px;
-}
-.header-nav{
-	margin-right: auto;
 }
 .header-nav-list{
 	display: flex;
@@ -182,8 +211,9 @@ img{
 .header-adr-item:last-child{
 	margin-right: 0;
 }
-.header-cont {
-	margin-right: 40px;
+.header-adr,
+.header-adr-item{
+    color: currentColor;
 }
 
 /* Section 1*/
@@ -206,8 +236,7 @@ img{
 	background-color: var(--color-iris);
 	color: var(--color-white);
 
-	
-	/*font-family: inherit;*/
+		/*font-family: inherit;*/
 	font-family: 'Roboto', sans-serif;
 
 	font-weight: 500;
@@ -215,7 +244,6 @@ img{
 	line-height: 1.5;
 	letter-spacing: 0.04em;
     text-align: center;
-	cursor: pointer;
 
 }
 .button:hover,
@@ -250,15 +278,9 @@ img{
 	/*color: var(--color-iris);*/
 	color: var(--color-cloud);
 }
+/* ===== ====== =====*/
 
 
-.header-adr,
-.header-adr-item{
-    text-decoration: none; /*прибрали підкреслення у всіх посилань*/
-    color: currentColor;
-    font-style: normal;
-	
-}
 .feature-list {
 	display: flex;
 	gap: 24px;
@@ -354,7 +376,6 @@ img{
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.04em;
-	cursor: pointer;
 
 	padding: 12px 24px;
 }
@@ -397,8 +418,6 @@ img{
 	padding-left: 16px;*/
 
 	padding: 32px 16px;
-
-	
 }
 
 .portfolio-list-itm
